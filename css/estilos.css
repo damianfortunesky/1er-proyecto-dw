@@ -64,7 +64,7 @@ body {
 .navegacion-principal a:hover {
     background-color: var(--amarillo);
     color:var(--negro);
-    transition: 1s;
+    transition: 0.2s;
 }
 
 /* Contendor-img e img */
@@ -153,7 +153,7 @@ body {
     width: 20rem;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--amarillo);
+    background-color: var(--azul);
     border-radius: 50%;
 }
 
@@ -244,6 +244,11 @@ body {
     height: 30px;
     border-radius: 5px;
     border: none;
+    padding: 2px;;
+}
+
+input::placeholder {
+    padding: 2px;
 }
 
 .inputs textarea {
@@ -252,6 +257,13 @@ body {
     resize: none;           /*Evita que se pueda agrandar el elemento  */
     overflow-y: scroll;   /* Te  deja scrollear el contenido excedente */  
 }
+
+textarea::-webkit-scrollbar {
+  background-color: white;
+}
+
+
+
 
 .boton-formulario {
     border-radius: 5px;
